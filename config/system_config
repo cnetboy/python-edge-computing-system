@@ -1,0 +1,61 @@
+[MODEL CONFIG]
+# Model used for classification
+MODEL=Full Yolo
+
+[THRESHOLDS]
+# In percent; Determine whether to accept prediction.
+PREDICTION_ACCURACY=80
+# In percent; Determine whether battery is too low to handle computation.
+BATTERY_PERCENT=10
+# In seconds; Determine when computation time is too long.
+COMPUTATION_TIME=20
+# In percent; Determine when images should be transfered.
+SEND_IMAGE_TRAFFIC=10
+# In count; Determine when training should occur.
+TRAIN_SIZE=100
+# In percent; Determine when trained model is at a good error rate to use and update weights.
+TRAIN_ERROR_RATE=90
+
+[SYSTEM]
+# Boolean; Determine whether clustering of work should occur.
+CLUSTER=OFF
+# Boolean; Determine whether other process should be turned off to use larger models.
+USE_LARGER_MODEL=ON
+# Boolean; Determine whether to put system to power saving mode.
+BATTERY_SAVER=ON
+# Boolean; Determine whether images should be saved.
+SAVE_IMAGES=ON
+# Boolean; Determine whether models should be trained.
+TRAIN=OFF
+# Component
+COMPONENT=NODE
+
+[E_FUSION]
+CLASSES=person
+IMAGE_SIZE_WIDTH=416
+IMAGE_SIZE_HEIGHT=416
+GRID_W=13
+GRID_H=13
+BOXES_PER_CELL=5
+ALPHA=0.1
+OBJECT_SCALE=5.0
+NO_OBJECT_SCALE=1.0
+CLASS_SCALE=1.0
+COORD_SCALE=1.0
+LEARNING_RATE=0.0001
+DECAY_STEPS=30000
+DECAY_RATE=0.1
+BATCH_SIZE=5
+EPOCH=20
+MAX_ITER=1000
+SUMMARY_ITER=10
+SAVE_ITER=10
+THRESHOLD=0.2
+IOU_THRESHOLD=0.5
+NUM_CAMERAS=3
+WEIGHT_FILE=data/weights
+STAIRCASE=True
+GPU=0.8
+OUTPUT_FILE=data\output\
+N_ANCHORS=10
+ANCHORS=[1.01,1.69, 2.50,4.42, 4.30,8.78, 7.84,5.21, 10.08,10.73]

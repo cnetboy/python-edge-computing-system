@@ -1,0 +1,8 @@
+flask
+pymongo
+keras==2.2.2
+tensorflow-gpu
+opencv-python==3.3.0.9
+gunicorn
+scikit-image
+google-cloud-storage
