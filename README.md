@@ -47,6 +47,8 @@ The components of the system are the following:
 
 6. Singleton
 
+7. Adaptor
+
 ### Running application
 
 python main.py -s WINDOWS -c EDGE -m YOLOV2 -v NONE
